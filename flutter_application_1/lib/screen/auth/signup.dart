@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 class Signup extends StatelessWidget {
   const Signup({super.key});
@@ -119,36 +120,51 @@ class Signup extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Container(
+                      alignment: Alignment.center,
                       width: 35,
                       height: 35,
-                      padding: EdgeInsets.all(10),
+                      //padding: EdgeInsets.all(10),
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
                         color: Color(0xffeeeff1),
                       ),
-                      child: Image.asset("assets/icons/google.png"),
+                      child: SvgPicture.asset(
+                        "assets/icons/google.svg",
+                        height: 22,
+                        width: 22,
+                      ),
                     ),
                     SizedBox(width: 10),
                     Container(
+                      alignment: Alignment.center,
                       width: 35,
                       height: 35,
-                      padding: EdgeInsets.all(8),
+                      //padding: EdgeInsets.all(8),
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
                         color: Color(0xffeeeff1),
                       ),
-                      child: Image.asset("assets/icons/facebook.png"),
+                      child: SvgPicture.asset(
+                        "assets/icons/facebook.svg",
+                        height: 22,
+                        width: 22,
+                      ),
                     ),
                     SizedBox(width: 10),
                     Container(
+                      alignment: Alignment.center,
                       width: 35,
                       height: 35,
-                      padding: EdgeInsets.all(9),
+                      //padding: EdgeInsets.all(9),
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
                         color: Color(0xffeeeff1),
                       ),
-                      child: Image.asset("assets/icons/twitter.png"),
+                      child: SvgPicture.asset(
+                        "assets/icons/twitter.svg",
+                        height: 22,
+                        width: 22,
+                      ),
                     ),
                   ],
                 ),
