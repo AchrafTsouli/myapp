@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'screen/auth/home/Homescreen.dart';
 import 'screen/auth/onboardingScreen.dart';
 import 'screen/auth/signin.dart';
 import 'screen/auth/signup.dart';
@@ -18,7 +19,13 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.orange,
       ),
-      home: const Signup(),
+      //home: const Signup(),
+      initialRoute: "/signin",
+      routes: {
+        "/signin": (context) => const Signin(),
+        "/signup": (context) => const Signup(),
+        "/home": (context) => const Homescreen(),
+      },
     );
   }
 }
