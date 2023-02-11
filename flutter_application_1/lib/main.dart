@@ -20,11 +20,12 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.orange,
       ),
       //home: const Signup(),
-      initialRoute: "/signin",
+      initialRoute: "/onboard",
       routes: {
         "/signin": (context) => const Signin(),
         "/signup": (context) => const Signup(),
         "/home": (context) => const Homescreen(),
+        "/onboard": (context) => const OnboardingScreen(),
       },
     );
   }
