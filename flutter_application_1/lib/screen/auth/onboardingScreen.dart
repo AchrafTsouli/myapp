@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({super.key});
@@ -110,7 +111,7 @@ class OnboardingScreen extends StatelessWidget {
                     height: 55,
                   ),
                   TextButton(
-                    onPressed: afficher,
+                    onPressed: () => afficher(context),
                     child: Text(
                       "Continue",
                       style: TextStyle(
@@ -135,7 +136,7 @@ class OnboardingScreen extends StatelessWidget {
         ));
   }
 
-  void afficher() {
-    print("continue");
+  void afficher(context) {
+    Navigator.pushNamed(context, "/signin");
   }
 }
