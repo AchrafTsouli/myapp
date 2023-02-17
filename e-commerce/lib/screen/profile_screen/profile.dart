@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'components/profile_image.dart';
+import 'components/top_page.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
@@ -14,27 +15,7 @@ class ProfileScreen extends StatelessWidget {
         physics: BouncingScrollPhysics(),
         child: Column(
           children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                IconButton(
-                  onPressed: () {},
-                  icon: Icon(
-                    Icons.arrow_back_ios_new_rounded,
-                    size: 16,
-                    color: Colors.grey,
-                  ),
-                ),
-                Text("Profile",
-                    style: TextStyle(
-                        fontSize: 19,
-                        fontWeight: FontWeight.w700,
-                        color: Colors.grey)),
-                SizedBox(
-                  width: 20,
-                )
-              ],
-            ),
+            toppage(),
             SizedBox(height: 20),
             ProfilePicture(),
           ],
